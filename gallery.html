@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Excellent Guest Hotel</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(128, 0, 0, 0.7)), url('assets/images/hero.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Excellent Guest Hotel</a>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="drinks.html">Drinks & Bar</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 8px 20px;">Contact
+                        Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>A visual tour of our hotel and amenities.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Using placeholder images from assets repeated for demo -->
+                <div class="gallery-item"><img src="assets/images/Bed.jpeg" alt="Hotel Exterior"></div>
+                <div class="gallery-item"><img src="assets/images/garden.jpeg" alt="Comfortable Room"></div>
+                <div class="gallery-item"><img src="assets/images/livingspace.jpeg" alt="Delicious Food"></div>
+                <div class="gallery-item"><img src="assets/images/rooms.jpeg" alt="Room Interior"></div>
+                <div class="gallery-item"><img src="assets/images/bar.jpeg" alt="Dining Experience"></div>
+                <div class="gallery-item"><img src="assets/images/bathroom.jpeg" alt="Hotel View"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="logo">Excellent Guest Hotel</h4>
+                    <p>Comfort, Quality, and Hospitality in Kirinyaga County.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Wanguru, Kirinyaga County</p>
+                    <p><i class="fas fa-phone"></i> 0746 815 504</p>
+                    <p><i class="fas fa-envelope"></i> guesthouseexcellent@gmail.com</p>
+                </div>
+            </div>
+            <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p>&copy; <span id="current-year"></span> Excellent Guest Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Excellent Guest Hotel</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(128, 0, 0, 0.7)), url('assets/images/hero.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .map-container {
+            height: 400px;
+            background: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Excellent Guest Hotel</a>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="drinks.html">Drinks & Bar</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active btn btn-primary"
+                        style="color: white; padding: 8px 20px;">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for bookings and inquiries.</p>
+        </div>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+
+                <!-- Contact Info -->
+                <div style="padding-right: 20px;">
+                    <h2 class="section-title" style="text-align: left; left: 0; transform: none; margin-bottom: 30px;">
+                        Get in Touch</h2>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-maroon);"><i class="fas fa-phone-alt"></i> Phone</h4>
+                        <p style="font-size: 1.2rem;">0746 815 504</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-maroon);"><i class="fas fa-map-marker-alt"></i> Location</h4>
+                        <p>Wanguru, Kirinyaga County, Kenya</p>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <h4 style="color: var(--color-maroon);"><i class="fas fa-clock"></i> Hours</h4>
+                        <p>Open 24/7 for Accommodation</p>
+                        <p>Restaurant: 7:00 AM - 10:00 PM</p>
+                        <p>Bar: 12:00 PM - Late</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1588328636!2d37.3333!3d-0.6167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18288f0000000000%3A0x0!2sWanguru!5e0!3m2!1sen!2ske!4v1600000000000!5m2!1sen!2ske"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="logo">Excellent Guest Hotel</h4>
+                    <p>Comfort, Quality, and Hospitality in Kirinyaga County.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Wanguru, Kirinyaga County</p>
+                    <p><i class="fas fa-phone"></i> 0746 815 504</p>
+                    <p><i class="fas fa-envelope"></i> guesthouseexcellent@gmail.com</p>
+                </div>
+            </div>
+            <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p>&copy; <span id="current-year"></span> Excellent Guest Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
